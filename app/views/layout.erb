@@ -18,6 +18,15 @@
   <title></title>
 </head>
 <body>
+  <% if current_user %>
+    <a href="/user/<%= current_user.id %>"><%= current_user.name %></a>
+    <form action="/logout" method="get">
+      <input type="submit" value="logout" >
+    </form>
+  <% else %>
+  
+    <a href="/login">Login</a>
+  <% end %>
   <%= yield %>
 </body>
 </html>

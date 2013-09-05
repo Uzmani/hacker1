@@ -25,6 +25,13 @@ get '/:user_id/comments' do
   erb :user_comments
 end
 
+get '/user/:id' do
+  # render user profile page
+
+
+  erb :profile
+end
+
 
 
 post '/comment' do 

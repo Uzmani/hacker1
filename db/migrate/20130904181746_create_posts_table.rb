@@ -3,6 +3,7 @@ class CreatePostsTable < ActiveRecord::Migration
     create_table :posts do |t|
       t.string :title
       t.string :url
+      t.belongs_to :user
     end
   end
 end

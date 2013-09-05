@@ -1,4 +1,14 @@
 <div class="container">
-  <h1>Welcome to Sinatra!</h1>
-  contain
+  <h1>Welcome to CharlUsman News</h1>
+  <div class="btn-login">
+    <% Post.all.each do |i| %>
+      <%= i.title%>  <a href="http://<%= i.url%>"><%= i.url %></a>
+      <br>
+      <% end %>
+
+
+    
+  </div>
+
+  
 </div>
